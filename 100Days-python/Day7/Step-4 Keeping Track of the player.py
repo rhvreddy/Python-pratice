@@ -1,6 +1,3 @@
-from dulwich.porcelain import print_tag
-from transformers import prune_layer
-
 word_list = ["aardvark", "baboon", 'camel']
 
 
@@ -60,8 +57,5 @@ while not game_over:
         game_over = True
         print("You Win.")
 
-
 ## Step3 ==> print the ASCII art from 'stages'
 # that corresponds to the current number of 'lives' the user has remaining.
-
-
