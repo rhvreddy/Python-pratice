@@ -48,9 +48,10 @@ while not game_over:
 # If lives goes down to 0 then the game should stop and it should print "You lose"
     if guess not in chosen_word:
         lives -= 1
+        print(f"You guessed {guess}, that's not in the word. You lose a life.")
         if lives == 0:
             game_over = True
-            print("You lose.")
+            print(f"******IT WAS {chosen_word}! YOU LOSE******************.")
 
 
     if "_" not in display:
