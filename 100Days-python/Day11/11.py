@@ -69,12 +69,13 @@ def play_game():
     print(f"Computer's final hand: {computer_cards}, final score: {computer_score}")
     print(compare(user_score, computer_score))
 
-    while input("Do you want to play a game of BlackJack? Type 'y' or 'n': ") == "y":
-        print("\n" * 20)
-        play_game()
+while input("Do you want to play a game of BlackJack? Type 'y' or 'n': ") == "y":
+    print("-----------------" * 20)
+    play_game()
 
 
-
-
-
-
+# if __name__ == '__main__':
+#
+#     while input("Do you want to play a game of BlackJack? Type 'y' or 'n': ") == "y":
+#         print("-----------------" * 20)
+#         play_game()  ==> Or else we can call the function using the main
